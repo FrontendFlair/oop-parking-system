@@ -178,7 +178,7 @@ public:
     }
 
     // Function to input vehicle information
-    virtual void inputInfo()
+    void inputInfo()
     {
         cin.ignore();
         cout << "Enter Model: ";
@@ -577,7 +577,7 @@ int main()
 
         case 5:
             logoutSystem.logout();
-            break;
+            exit(0);
 
         default:
             cout << "Invalid choice. Please try again." << endl;
